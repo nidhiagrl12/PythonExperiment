@@ -25,10 +25,12 @@ function check() {
 }
 
 check
-readonly exit_code=$?
+exit $?
 
-rm -rf sandbox
-rm -rf errors.txt
-rm -rf */__pycache__
+#readonly exit_code=$?
 
-exit $exit_code
+#rm -rf sandbox
+#rm -rf errors.txt
+#rm -rf */__pycache__
+
+#exit $exit_code
