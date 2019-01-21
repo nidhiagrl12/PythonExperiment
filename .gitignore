@@ -1,5 +1,8 @@
 sandbox/
 
+.mypy_cache/
+errors.txt
+
 .project
 .vscode
 .pydevproject

@@ -11,3 +11,8 @@ def print_points(points: List[Point]):
         print("X:", point[0], "  Y:", point[1])
 
 
+x1 : Point  = (4,5)
+#x2 : Point = (3,4)
+x2 = 4
+ 
+print_points([x1,x2])
