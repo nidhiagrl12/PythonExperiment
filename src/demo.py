@@ -15,9 +15,8 @@ def print_points(points: List[Point]):
 def add(x:int, y:int) -> int:
     return x + y
 
-
-x1 : Point  = (4,5)
-#x2 : Point = (3,4)
-x2 = 4
- 
-print_points([x1,x2])
+if __name__ == "__main__":
+    x1 : Point  = (4,5)
+    x2 : Point = (3,4)
+    #x2 = 4
+    print_points([x1,x2])
