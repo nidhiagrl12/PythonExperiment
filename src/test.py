@@ -1,7 +1,7 @@
 import sys
 
 
-def is_venv():
+def is_venv() -> bool:
     return (hasattr(sys, 'real_prefix') or
             (hasattr(sys, 'base_prefix') and sys.base_prefix != sys.prefix))
 

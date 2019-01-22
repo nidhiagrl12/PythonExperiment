@@ -9,7 +9,10 @@ function check() {
   source sandbox/bin/activate
   pip3 install -r requirements.txt
 
-  mypy src/ test/ > errors.txt
+  mypy --python-version 3.7  --disallow-untyped-calls --disallow-untyped-defs --disallow-incomplete-defs \
+     --disallow-any-unimported --disallow-any-expr --disallow-any-decorated \
+     --disallow-any-explicit --disallow-any-generics \
+     --warn-return-any --strict --show-error-context --show-column-numbers --no-incremental src/ test/ > errors.txt
 
   if [ -s errors.txt ]
   then

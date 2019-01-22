@@ -6,7 +6,7 @@ Point = Tuple[int, int]
 
 
 # Create a function designed to take in a list of Points
-def print_points(points: List[Point]):
+def print_points(points: List[Point]) -> None:
     for point in points:
         print("X:", point[0], "  Y:", point[1])
 
