@@ -10,7 +10,7 @@ class TestAddMethods(unittest.TestCase):
 
     def test2(self) -> None:
         z = demo.add(5,4)
-        self.assertEqual(z, 8)
+        self.assertEqual(z, 9)
 
 
 if __name__ == '__main__':
